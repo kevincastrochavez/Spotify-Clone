@@ -10,6 +10,27 @@
 
   &__left {
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+
+    &-album {
+      height: 60px;
+      width: 60px;
+      margin-right: 20px;
+      object-fit: contain;
+    }
+
+    &-song {
+      & h4 {
+        margin-bottom: 5px;
+      }
+
+      & p {
+        font-size: 12px;
+      }
+    }
   }
 
   &__center {
@@ -20,6 +41,20 @@
     align-items: center;
     justify-content: space-between;
     max-width: 300px;
+
+    &-green {
+      color: #1ed15e;
+    }
+
+    &-icon,
+    &-green {
+      cursor: pointer;
+
+      &:hover {
+        transition: transform 0.2s ease-in-out;
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__right {
@@ -28,5 +63,9 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+
+    & * .MuiSlider-root {
+      color: green;
+    }
   }
 }

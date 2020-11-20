@@ -14,7 +14,13 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__left">
-        <p>Album and song details</p>
+        <img className="footer__left-album" src="" alt="" />
+
+        <div className="footer__left-song">
+          <h4>Yeah!</h4>
+
+          <p>Usher</p>
+        </div>
       </div>
 
       <div className="footer__center">
@@ -22,7 +28,7 @@ function Footer() {
         <SkipPrevious className="footer__center-icon" />
         <PlayCircleOutline fontSize="large" className="footer__center-icon" />
         <SkipNext className="footer__center-icon" />
-        <Repeat className="footer__center-icon" />
+        <Repeat className="footer__center-green" />
       </div>
 
       <div className="footer__right">
